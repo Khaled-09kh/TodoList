@@ -1,30 +1,40 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<title>Music player khaled</title>
+</head>
+<body>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <title>SabzLearn | Js | 146</title>
-  </head>
+    <div class="bg-container">
+        <img src="" alt="" id="background">
+    </div>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="" alt="" id="cover" class="active">
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio src=""></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time"></span>
+                <span id="duration"></span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+<script src="js/script.js"></script>
 
-  <body>
-    <div class="container">
-
-      <ul class="list-group todos mx-auto text-light">
-        
-      </ul>
-
-      <form class="add text-center my-4" autocomplete="off">
-          <label class="text-light">
-              Add New Todo...
-          </label>
-          <input type="text" class="form-control m-auto" name="add"/>
-      </form>
-  </div>
-
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
+</body>
+</html> 
